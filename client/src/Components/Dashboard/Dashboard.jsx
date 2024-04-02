@@ -44,7 +44,7 @@ const Dashboard = () => {
                             </Link>
                         </li>
                     )}
-                    {(userRole === 'admin' || userRole === 'sale' || userRole === 'buyer') && (
+                    {(userRole === 'admin' || userRole === 'vendor' || userRole === 'buyer') && (
                         <li>
                             <Link to={'/productinventory'}>
                                 <a href="#">
@@ -54,7 +54,7 @@ const Dashboard = () => {
                             </Link>
                         </li>
                     )}
-                    {(userRole === 'admin' || userRole === 'buyer' || userRole === 'sale') && (
+                    {(userRole === 'admin' || userRole === 'buyer' || userRole === 'vendor') && (
                         <li>
                             <Link to={'/ventas'}>
                                 <a href="#">
